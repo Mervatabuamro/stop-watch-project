@@ -46,20 +46,20 @@ const resetTimer = () => {
 
 // updating the stopwatch
 
+let hrs = 0;
 let min = 0;
 let sec = 0;
-let msec = 0;
 
 const updateTimer = () => {
-    msec++;
-    millSeconds.innerText = msec;
-    if (msec >= 100) {
-        sec++;
-        seconds.innerText = sec;
-        msec = 0;
-    } else if (sec >= 60) {
+    sec++;
+    millSeconds.innerText = sec;
+    if (sec >= 60) {
         min++;
-        minutes.innerText = min;
+        seconds.innerText = min;
+        sec = 0;
+    } else if (min >= 60) {
+        hrs++;
+        minutes.innerText = hrs;
         sec = 0;
     }
 };
