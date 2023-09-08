@@ -7,5 +7,55 @@
 }
 
 body {
-    background-color: #000;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-size: xx-large;
+}
+
+.stopwatch-container {
+    background-color: rgb(164, 208, 235);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid whitesmoke;
+    padding: 10px;
+    position: relative;
+    width: 80%;
+    height: 200px;
+    border-radius: 999px;
+    flex-direction: column;
+}
+
+.stopwatch {
+    font-size: 2em;
+    justify-content: center;
+}
+
+button {
+    justify-content: center;
+    background: #5e5df0;
+    border-radius: 999px;
+    box-shadow: #5e5df0 0 10px 20px -10px;
+    box-sizing: border-box;
+    color: #ffffff;
+    cursor: pointer;
+    outline: 0 solid transparent;
+    padding: 8px 18px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: fit-content;
+    word-break: break-word;
+    border: 0;
+    display: flex;
+}
+
+.button-container {
+    display: flex;
+    gap: 10px;
+    margin-top: 20p;
 }
